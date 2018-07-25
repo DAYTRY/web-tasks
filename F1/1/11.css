@@ -1,0 +1,168 @@
+body{
+	background-color:#ea68a2;  
+	
+}
+.header-content{
+    width: 100%;
+    height: 80px;
+	margin-top:10px;
+    border-radius: 10px 10px 0px 0px;
+    color:#ea68a2;
+    text-align: center;
+}
+#in{  
+   width:400px;  
+   height:500px; 
+   position:absolute; 
+   left: 50%; 
+   top: 50%; 
+   margin-left:-200px; 
+   margin-right:-200px;
+   margin-top:-240px; 
+   border:1px; 
+   background-color:white;         
+}     
+#form{
+   width:300px;
+   height:160px; 
+   position:relative;
+   left:50%; 
+   top:30%; 
+   margin-left:-150px;
+   margin-top:-80px;   
+ } 
+.form-body{
+    width: 60%;
+    height: 60%;
+    margin: auto;
+}
+.form-body label{
+    position: absolute;
+    bottom: 8px;
+    left: -11px;
+    font-size: 16px;
+    opacity: 0.8;
+    color: black;
+    display: block;
+    text-align: left;
+    cursor: pointer;
+}
+.open-label{        
+    -webkit-animation: open-label 0.5s steps(20,start) forwards;
+    -moz-animation: open-label 0.5s steps(20,start) forwards;
+    -o-animation: open-label 0.5s steps(20,start) forwards;
+    animation: open-label 0.5s steps(20,start) forwards;
+}
+@keyframes open-label{
+    0%{
+        bottom: 8px;
+    }
+    60%{
+        bottom: 55px;
+    }
+    100%{
+        font-size: 10px;
+        font-weight: 200;
+        opacity: 0.65;
+        bottom: 46px;
+    }
+}
+.close-label{ 
+    -webkit-animation: close-label 0.3s steps(20,start) forwards;
+    -moz-animation: close-label 0.3s steps(20,start) forwards;
+    -o-animation: close-label 0.3s steps(20,start) forwards;
+    animation: close-label 0.3s steps(20,start) forwards;
+}
+@keyframes close-label{
+    from{
+        bottom: 48px;
+    }
+    to{
+        font-size: 16px;
+        font-weight: 200;
+        bottom: 8px;
+    }
+}
+.form-body .input{
+    width: 90%;
+    height: 60px;
+    margin: auto;
+    position: relative;  
+}
+
+.form-body #user-id,
+.form-body #user-pwd
+{
+    width: 180px;
+    height: 2px;
+    padding-left: 32px;
+    margin-left: -16px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 3px;
+    border:none; border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.open-id{       
+    -webkit-animation: open-id 0.3s steps(20,start) forwards;
+    -moz-animation: open-id 0.3s steps(20,start) forwards;
+    -o-animation: open-id 0.3s steps(20,start) forwards;
+    animation: open-id 0.3s steps(20,start) forwards;
+}
+@keyframes open-id{
+    from{
+        height: 2px;
+    }
+    to{
+        height: 30px;
+    }
+}
+.open-pwd{      
+    animation: open-pwd 0.3s steps(20,start) forwards;
+    -webkit-animation: open-pwd 0.3s steps(20,start) forwards;
+    -moz-animation: open-pwd 0.3s steps(20,start) forwards;
+    -o-animation: open-pwd 0.3s steps(20,start) forwards;
+}
+@keyframes open-pwd{
+    from{
+        height: 2px;
+    }
+    to{
+        height: 30px;
+    }
+}
+.close-input{         
+    animation: close-input 0.3s steps(20,start) forwards;
+    -webkit-animation: close-input 0.3s steps(20,start) forwards;
+    -moz-animation: close-input 0.3s steps(20,start) forwards;
+    -o-animation: close-input 0.3s steps(20,start) forwards;
+}
+@keyframes close-input{
+    from{
+        height: 30px;
+    }
+    to{
+        height: 2px;
+    }
+}
+
+button{  
+    width: 200px;  
+    height: 50px;  
+    margin-top: 25px;  
+    background: #ffe4e1;  
+    border-radius: 10px;  
+    border:none;
+    font-size: 18px;
+    font-weight: 700;  
+    color: #ea68a2;
+}
+button:hover {
+background: #ea68a2;  
+outline: 0;color: white;
+}
+
+
+
+
+
