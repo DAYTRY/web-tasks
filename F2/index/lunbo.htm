@@ -1,41 +1,36 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>lunbo</title>
-	  
-    <script src="..\framework/jquery.js"></script>
-    <script src="..\src/lunbo.js"></script>
-    <link href="..\src/lunbo.css" rel="stylesheet" type="text/css">   
-       
-    
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>lunbo</title>
+  <script src="../framework/jquery.js"></script>
+  <script src="../framework/lunbo.js"></script>
+  <link href="../css/lunbo.css" rel="stylesheet" type="text/css"> 
 </head>
 <body>
-<div class="lunbo-container" id="lunbo">     
-                <div class="image-container">            
-                     <ul>
-                         <li><a href="#"><img src="..\image/1.jpg"></a></li>
-                         <li><a href="#"><img src="..\image/2.jpg"></a></li>
-                         <li><a href="#"><img src="..\image/3.jpg"></a></li>
-                         <li><a href="#"><img src="..\image/4.jpg"></a></li>
-                         <li><a href="#"><img src="..\image/5.jpg"></a></li>
-                         <li><a href="#"><img src="..\image/6.jpg"></a></li>
-                     </ul>
-                </div>
-            </div>
-	<script>
-        var myLunbo1 = new $("#lunbo").createLunbo(
-		{
-		    number : true,         //设置是否显示示数栏，默认显示
-            button : true,         //设置是否显示按钮，默认显示
-            interval : 3000,       //设置轮播时间间隔，默认三秒
-            swipeSwitch : true,    //设置是否启用触屏切图功能，默认开启
-            dragSwitch : true,     //设置是否启用拖动图片切图，默认开启
-            switchEffect : "card", //设置是图片切换特效，可选card/fade/none 默认fade
-            autoShow : true,       //设置是否自动轮播，默认开启
-            hoverStop : true,      //设置鼠标悬浮在图片上时是否暂停轮播，默认开启
-            numStyle : "circle"    //设置示数栏风格 提供rect/circle选项，默认rect
-		}); 
-    </script>
+  <div class="wrap">
+    <div class="banner">
+      <div class="bannerCon">
+        <ul class="imgList">
+          <li><a href="#"><img src="../image/1.jpg" alt=""/></a></li>
+          <li><a href="#"><img src="../image/2.jpg" alt=""/></a></li>
+          <li><a href="#"><img src="../image/3.jpg" alt=""/></a></li>
+		  <li><a href="#"><img src="../image/4.jpg" alt=""/></a></li>
+		  <li><a href="#"><img src="../image/5.jpg" alt=""/></a></li>
+        </ul>
+        <ul class="btnList clearfix">
+          <li class="cur"><span></span></li>
+          <li><span></span></li>
+          <li><span></span></li>
+		  <li><span></span></li>
+		  <li><span></span></li>
+        </ul>
+        <span class="pre-nex prev">&lt;</span> 
+        <span class="pre-nex next">&gt;</span> 
+      </div>
+    </div>
+  </div>
 </body>
 </html>
