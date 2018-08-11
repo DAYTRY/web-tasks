@@ -1,0 +1,164 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.lunbo-container{
+    width: 600px;
+    height: 400px;
+    position: relative;
+    margin: 100px auto;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+.lunbo-container>.image-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+	border-radius: 15%;
+}
+.image-container>*{
+    width: 100%;
+    height: 100%;
+}
+.image-container li{
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    display: none;
+}
+
+
+.btn-container .btn{
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    width: 30px;
+    height: 60px;
+    background-color: black;
+    opacity: 0.6;
+    border:none;
+    display: none;
+    overflow: hidden;
+}
+.lunbo-container:hover .btn{
+    display: inline-block;
+    cursor: pointer;
+}
+.btn-container .btn-left{
+    left: 0px;
+    background-image: url(btn_ico/btn_left.png);
+}
+.btn-container .btn-right{
+    right: 0px;
+    background-image: url(btn_ico/btn_right.png);
+}
+.num-container{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.num-container .circle{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 0.6;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.num-container .active{
+    background-color: red;
+}
+
+/*切换特效*/
+.image-container .card-in{
+    position: absolute;
+    display: list-item;
+    animation: card-in 1s ease-in forwards;
+    -webkit-animation: card-in steps(100,start) 1s forwards;
+    -moz-animation: card-in 1s ease-in forwards;
+    -o-animation: card-in 1s ease-in forwards;
+}
+.image-container .card-out{
+    position: absolute;
+    display: list-item;
+    animation: card-out 1s ease-in forwards;
+    -webkit-animation: card-out steps(100,start) 1s forwards;
+    -moz-animation: card-out 1s ease-in forwards;
+    -o-animation:  card-out 1s ease-in forwards;
+}
+@keyframes card-in{
+    from{
+        right: 100%;
+        width: 80px;
+        opacity: 0.6;
+    }
+
+    to{
+        opacity: 1;
+        right: 0%;
+    }
+}
+
+@keyframes card-out{
+    from{
+        left: 0%;
+        opacity: 1;
+    }
+    to{
+        opacity: 0.5;
+        left: 100%;
+    }
+}
+
+.image-container .card-right-in{
+    position: absolute;
+    display: list-item;
+    animation: card-right-in 1s ease-in forwards;
+    -webkit-animation: card-right-in steps(100,start) 1s forwards;
+    -moz-animation: card-right-in 1s ease-in forwards;
+    -o-animation: card-right-in 1s ease-in forwards;
+}
+.image-container .card-right-out{
+    position: absolute;
+    display: list-item;
+    animation: card-right-out 1s ease-in forwards;
+    -webkit-animation: card-right-out steps(100,start) 1s forwards;
+    -moz-animation: card-out 1s ease-in forwards;
+    -o-animation:  card-right-out 1s ease-in forwards;
+}
+@keyframes card-right-in{
+    from{
+        left: 100%;
+        width: 80px;
+        opacity: 0.6;
+    }
+    to{
+        opacity: 1;
+        left: 0%;
+    }
+}
+@keyframes card-right-out{
+    from{
+        right: 0%;
+        opacity: 1;
+    }
+    to{
+        right:100%;
+        opacity: 0.5;
+    }
+}
+
